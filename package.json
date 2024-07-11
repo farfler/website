@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "dev": "dotenv -- turbo dev --env-mode loose",
+    "build": "dotenv -- turbo build --env-mode loose",
+    "lint": "dotenv -- turbo lint --env-mode loose"
   },
   "devDependencies": {
+    "dotenv-cli": "^7.4.2",
     "turbo": "^2.0.6"
   },
   "workspaces": [
