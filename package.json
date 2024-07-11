@@ -2,7 +2,16 @@
   "name": "farfler",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.6"
+  },
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "packageManager": "bun@1.1.1"
 }
